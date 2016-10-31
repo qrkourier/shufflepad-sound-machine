@@ -5,12 +5,12 @@ Continuously play sound effects separated by a random amount dead air
 I wanted to create a spooky ambiance for the front stoop of the house where tricksters and ghouls were expected to appear on Halloween night. I wrote a script to shuffle a directory full of halloween sound effects (e.g., chains rattling, ghosts laughing, etc...) and concatenate them together with an unpredictable delay between each effect to increase the chances of startling my victims.
 
 ### Download a copy of the sound effect loop
-If you just want the 90 minute stream of sounds with random silence that I used with my Spooky Sound Machine you can download [the .mp3 file](https://dl.dropboxusercontent.com/u/284525/SpookySoundMachine.mp3) and play it back on your mobile or whatever.
+If you just want the 90 minute stream of sounds with random silence that I used with my Spooky Sound Machine you can download [the .mp3 file](https://dl.dropboxusercontent.com/u/284525/SpookySoundMachine.mp3).
 
 ### Make Your Own Spooky Sound Machine
 #### Materials
-* one or more amplified speaker(s) that can accept a signal from a regular 1/8" headphone jack
-* one Raspberry Pi v1
+* one or more amplified speaker(s) that can accept a signal from a 1/8" headphone jack
+* one Raspberry Pi (any model with a headphone jack should work)
 * one SD card at least 8GB in size
 * one copy of [the SpookySoundMachine disk image for Raspberry Pi](https://dl.dropboxusercontent.com/u/284525/raspi-miniban-spookysoundmachine.img.gz)
 
@@ -41,7 +41,7 @@ You do not need Linux or MacOS for this, but I don't have convenient access to W
 
 4. Decompress and write the image file to the SD card root device (not to a partition).
   * I did this in Ubuntu Linux `gunzip < ~/Downloads/raspi-miniban-spookysoundmachine.img.gz | sudo dd of=/dev/mmcblk0`. 
-  * You will need to modify this depending on where you downloaded the compressed image file and whatever the name of the SD card happens to be on your system (mine is /dev/mmcblk0). 
+  * You will need to modify this depending on where you downloaded the compressed image file and whatever the name of the SD card happens to be on your system (mine is /dev/mmcblk0 and the first partition has a 'p1' suffix, so be sure to not include that in your `dd` command). 
 
 ### Make A Sound Machine With Your Own Sound Files
 #### Materials
