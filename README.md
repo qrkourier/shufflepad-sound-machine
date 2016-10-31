@@ -37,7 +37,7 @@ You do not need Linux or MacOS for this, but I don't have convenient access to W
 
 3. make sure it is not mounted (is ejected) or the write command will fail
   1. run `mount` or `df -h` or look in your file manager GUI to see mounted devices
-  2. run `umount DEVICENAME` for the DEVICENAME or click eject if any of your SD card's partitions are mounted 
+  2. run `sudo umount DEVICENAME` for the DEVICENAME or click eject if any of your SD card's partitions are mounted 
 
 4. Decompress and write the image file to the SD card root device (not to a partition).
   * I did this in Ubuntu Linux `gunzip < ~/Downloads/raspi-miniban-spookysoundmachine.img.gz | sudo dd of=/dev/mmcblk0`. 
@@ -57,6 +57,7 @@ In addition to the step-by-step instructions for the Spooky Sound Machine above,
 ##### Step by step
 1. Clone this repository to your computer like `git clone https://github.com/qrkourier/shufflepad-sound-machine.git`
 2. Copy your sound effects to the folder named "shufflepad-sound-machine"
+3. Use your OS's package manager (or something like homebrew on MacOS) to install libav and SoX which are dependencies of the script below. I did this in Ubuntu Linux with `sudo apt-get install sox libav-tools`
 3. In your terminal, change directory to "shufflepad-sound-machine"
 4. Execute `bash ./bin/shufflepad.sh` and wait
 5. In a few minutes you should see that ./pad/out.mp3 has been created. This is a shuffled compilation of your sounds with random silence between each.
