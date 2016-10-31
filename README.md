@@ -52,7 +52,7 @@ You do not need Linux or MacOS for this, but I don't have convenient access to W
 
 #### Instructions
 ##### Overview
-In addition to the step-by-step instructions for the Spooky Sound Machine above, you will collect the sound effects you wish to use in a directory and run shufpad.sh. You will need to install some software dependencies for shufpad.sh to use (libav, SoX). Then you'll copy your own out.mp3 composed by the script to the RasPi and you're done.
+In addition to the step-by-step instructions for the Spooky Sound Machine above, you will collect the sound effects you wish to use in a directory and run shufflepad.sh. You will need to install some software dependencies for shufflepad.sh to use (libav, SoX). Then you'll copy your own out.mp3 composed by the script to the RasPi and you're done.
 
 ##### Step by step
 1. Clone this repository to your computer like `git clone https://github.com/qrkourier/shufflepad-sound-machine.git`
