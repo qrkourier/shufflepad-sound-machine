@@ -46,13 +46,15 @@ You do not need Linux or MacOS for this, but I don't have convenient access to W
 ### Make A Sound Machine With Your Own Sound Files
 #### Materials
 * Same as the list for the Spooky Sound Machine above plus,
-* one or more .mp3 sound files, and
-* a copy of [the shufpad.sh script](https://gist.github.com/qrkourier/09abb1a8dccc0f5ac7ec6345f7ed3053)
+* one or more .mp3 sound files, 
+* a copy of this Git repository, 
+* some free open-source software (FOSS) detailed below
 
 #### Instructions
 ##### Overview
-In addition to the step-by-step instructions for the Spooky Sound Machine above, you will collect the sound effects you wish to use in a directory and run shufpad.sh. You will need to install some software dependencies for shufpad.sh to use (libav, SoX)
+In addition to the step-by-step instructions for the Spooky Sound Machine above, you will collect the sound effects you wish to use in a directory and run shufpad.sh. You will need to install some software dependencies for shufpad.sh to use (libav, SoX). Then you'll copy your own out.mp3 composed by the script to the RasPi and you're done.
 
 ##### Step by step
-1. todo
+1. Clone this repository to your computer like `git clone https://github.com/qrkourier/shufflepad-sound-machine.git`
+2. Copy your sound effects
 
