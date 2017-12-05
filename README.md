@@ -61,7 +61,7 @@ In addition to the step-by-step instructions for the Spooky Sound Machine above,
 3. In your terminal, change directory to "shufflepad-sound-machine"
 4. Execute `bash ./bin/shufflepad.sh` and wait
 5. In a few minutes you should see that ./pad/out.mp3 has been created. This is a shuffled compilation of your sounds with random silence between each.
-6. Copy out.mp3 to your raspi:/root/out.mp3 and reboot. You'll hear the first sound in a few seconds.
+6. Copy out.mp3 to your raspi:/var/tmp/out.mp3 and reboot. You'll hear the first sound in a few seconds.
 
 
 
